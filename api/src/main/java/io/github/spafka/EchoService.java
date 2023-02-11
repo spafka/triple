@@ -1,2 +1,6 @@
-package io.github.spafka;public class EchoServer {
+package io.github.spafka;
+
+public interface EchoService {
+
+    String echo(String echo);
 }

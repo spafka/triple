@@ -14,18 +14,6 @@ import java.lang.reflect.Method;
 import java.util.Properties;
 import java.util.UUID;
 
-/**
- * from: https://github.com/spring-projects/spring-xd/blob/v1.3.1.RELEASE/spring-xd-dirt/src/main/java/org/springframework/xd/dirt/zookeeper/ZooKeeperUtils.java
- * <p>
- * Helper class to start an embedded instance of standalone (non clustered) ZooKeeper.
- * <p>
- * NOTE: at least an external standalone server (if not an ensemble) are recommended, even for
- * {@link org.springframework.xd.dirt.server.singlenode.SingleNodeApplication}
- *
- * @author Patrick Peralta
- * @author Mark Fisher
- * @author David Turanski
- */
 public class EmbeddedZooKeeper implements SmartLifecycle {
 
     /**

@@ -1,0 +1,16 @@
+server:
+  port: 18080
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+  application:
+    name: consumer
+dubbo:
+  protocol:
+    name: dubbo
+  scan:
+    base-packages: io.github.spafka
+  registry:
+    address: nacos://localhost:8848

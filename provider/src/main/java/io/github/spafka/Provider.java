@@ -1,13 +1,17 @@
 package io.github.spafka;
 
+import org.apache.dubbo.config.spring.context.annotation.EnableDubbo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
-@SpringBootApplication
-public class App
+@EnableDubbo
+@SpringBootApplication(scanBasePackages = "io.github.spafka")
+public class Provider
 {
     public static void main( String[] args ) {
-        SpringApplication.run(App.class,args);
+//        new EmbeddedZooKeeper(2181, false).start();
+
+        SpringApplication.run(Provider.class,args);
     }
 }
