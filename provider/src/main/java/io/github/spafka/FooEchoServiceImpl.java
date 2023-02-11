@@ -8,4 +8,9 @@ public class FooEchoServiceImpl implements EchoService{
     public String echo(String echo) {
         return "foo"+echo;
     }
+
+    @Override
+    public void echonull(String echo) {
+
+    }
 }

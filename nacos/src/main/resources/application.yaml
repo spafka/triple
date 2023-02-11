@@ -1,0 +1,7 @@
+logging:
+  level:
+    root: debug
+spring:
+  cloud:
+    compatibility-verifier:
+      enabled: false
