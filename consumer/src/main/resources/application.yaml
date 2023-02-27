@@ -9,8 +9,11 @@ spring:
     name: consumer
 dubbo:
   protocol:
-    name: dubbo
+    name: tri
   scan:
     base-packages: io.github.spafka
   registry:
     address: nacos://localhost:8848
+  consumer:
+    cluster: failfast
+
